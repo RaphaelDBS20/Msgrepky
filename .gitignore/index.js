@@ -2,6 +2,7 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 
 client.on('ready', () => {
+  client.user.setPresence({ game: { name: '[m!help]', type: 0}})
   console.log(`Connecter en tant que : ${client.user.tag}!`);
 });
 
