@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-new Number(1);
+new Number(#40A497);
 
 client.on('ready', () => {
   client.user.setPresence({ game: { name: '[m!help]', type: 0}})
