@@ -1,6 +1,7 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
+process.on('uncaughtException', callback)
 process.setMaxListeners(0);
 
 client.on('ready', () => {
