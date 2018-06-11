@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
-emitter.setMaxListeners(99999999999999999999999999999999999999999999)
+emitter.setMaxListeners()
 
 client.on('ready', () => {
   client.user.setPresence({ game: { name: '[m!help]', type: 0}})
