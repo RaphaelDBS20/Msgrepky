@@ -1,6 +1,5 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-new Number(#40A497);
 
 client.on('ready', () => {
   client.user.setPresence({ game: { name: '[m!help]', type: 0}})
@@ -21,19 +20,19 @@ client.on('message', msg => {
 
 client.on('message', msg => {
   if (msg.content === 'rip') {
-    msg.reply('nous sommes tous triste de se déced...');
+    msg.channel.send('Nous sommes tous triste de se déced...');
   }
 });
 
 client.on('message', msg => {
   if (msg.content === 'r.i.p') {
-    msg.channel.send('nous sommes tous triste de se déced...');
+    msg.channel.send('Nous sommes tous triste de se déced...');
   }
 });
 
 client.on('message', msg => {
   if (msg.content === 'r.i.p.') {
-    msg.reply('nous sommes tous triste de se déced...');
+    msg.channel.send('Nous sommes tous triste de se déced...');
   }
 });
 
@@ -42,5 +41,125 @@ client.on('message', msg => {
     msg.reply('les mot a tapper : rip,issou,ping');
   }
 });
+
+client.on('message', msg => {
+  if (msg.content === 'NICK TA MERE') {
+    msg.reply('ATTENTION LES INSULTES SONT INTERDITES SUR LE SERVER !');
+  }
+});
+
+client.on('message', msg => {
+  if (msg.content === 'NICK TA MÉRE') {
+    msg.reply('ATTENTION LES INSULTES SONT INTERDITES SUR LE SERVER !');
+  }
+});
+
+client.on('message', msg => {
+  if (msg.content === 'FILS DE PUTE') {
+    msg.reply('ATTENTION LES INSULTES SONT INTERDITES SUR LE SERVER !');
+  }
+});
+
+client.on('message', msg => {
+  if (msg.content === 'FILS DE PUTES') {
+    msg.reply('ATTENTION LES INSULTES SONT INTERDITES SUR LE SERVER !');
+  }
+});
+
+client.on('message', msg => {
+  if (msg.content === 'PUTE') {
+    msg.reply('ATTENTION LES INSULTES SONT INTERDITES SUR LE SERVER !');
+  }
+});
+
+client.on('message', msg => {
+  if (msg.content === 'PUTES') {
+    msg.reply('ATTENTION LES INSULTES SONT INTERDITES SUR LE SERVER !');
+  }
+});
+
+client.on('message', msg => {
+  if (msg.content === 'PUTE!') {
+    msg.reply('ATTENTION LES INSULTES SONT INTERDITES SUR LE SERVER !');
+  }
+});
+
+client.on('message', msg => {
+  if (msg.content === 'PUTES!') {
+    msg.reply('ATTENTION LES INSULTES SONT INTERDITES SUR LE SERVER !');
+  }
+});
+
+client.on('message', msg => {
+  if (msg.content === 'OH LA PUTE') {
+    msg.reply('ATTENTION LES INSULTES SONT INTERDITES SUR LE SERVER !');
+  }
+});
+
+client.on('message', msg => {
+  if (msg.content === 'PUTE') {
+    msg.content('ATTENTION LES INSULTES SONT INTERDITES SUR LE SERVER !');
+  }
+});
+
+client.on('message', msg => {
+  if (msg.content === 'caca') {
+    msg.reply('Faut que tu murisse dans ta tete');
+  }
+});
+
+client.on('message', msg => {
+  if (msg.content === 'CACA') {
+    msg.reply('Faut que tu murise dans ta tete');
+  }
+});
+
+client.on('message', msg => {
+  if (msg.content === 'CACA') {
+    msg.reply('Faut que tu murise dans ta tete');
+  }
+});
+
+client.on('message', msg => {
+  if (msg.content === 'X)') {
+    msg.channel.send('X)');
+  }
+});
+
+client.on('message', msg => {
+  if (msg.content === 'XD') {
+    msg.channel.send('XD');
+  }
+})
+
+client.on('message', msg => {
+  if (msg.content === 'x)') {
+    msg.channel.send('x)');
+  }
+})
+
+client.on('message', msg => {
+  if (msg.content === 'mdr') {
+    msg.channel.send('mdr');
+  }
+})
+
+client.on('message', msg => {
+  if (msg.content === 'MDR') {
+    msg.channel.send('MDR');
+  }
+})
+
+client.on('message', msg => {
+  if (msg.content === 'lol') {
+    msg.channel.send('lol');
+  }
+})
+
+client.on('message', msg => {
+  if (msg.content === 'LOL') {
+    msg.channel.send('LOL');
+  }
+})
 
 client.login(process.env.loginuser)
