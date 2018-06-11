@@ -11,4 +11,34 @@ client.on('message', msg => {
   }
 });
 
+client.on('message', msg => {
+  if (msg.content === 'issou') {
+    msg.reply('Grace a toit la fete et presente chez risitas');
+  }
+});
+
+client.on('message', msg => {
+  if (msg.content === 'rip') {
+    msg.reply('nous sommes tous triste de se déced...');
+  }
+});
+
+client.on('message', msg => {
+  if (msg.content === 'r.i.p') {
+    msg.reply('nous sommes tous triste de se déced...');
+  }
+});
+
+client.on('message', msg => {
+  if (msg.content === 'r.i.p.') {
+    msg.reply('nous sommes tous triste de se déced...');
+  }
+});
+
+client.on('message', msg => {
+  if (msg.content === 'm!help') {
+    msg.reply('les mot a tapper : rip,issou,ping');
+  }
+});
+
 client.login(process.env.loginuser)
