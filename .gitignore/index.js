@@ -124,43 +124,43 @@ client.on('message', msg => {
 
 client.on('message', msg => {
   if (msg.content === 'X)') {
-    msg.channel.send('X)');
+    msg.channel.send('X-)');
   }
 });
 
 client.on('message', msg => {
   if (msg.content === 'XD') {
-    msg.channel.send('XD');
+    msg.channel.send('X-D');
   }
 })
 
 client.on('message', msg => {
   if (msg.content === 'x)') {
-    msg.channel.send('x)');
+    msg.channel.send('x-)');
   }
 })
 
 client.on('message', msg => {
   if (msg.content === 'mdr') {
-    msg.channel.send('mdr');
+    msg.channel.send('mdrr');
   }
 })
 
 client.on('message', msg => {
   if (msg.content === 'MDR') {
-    msg.channel.send('MDR');
+    msg.channel.send('MDRR');
   }
 })
 
 client.on('message', msg => {
   if (msg.content === 'lol') {
-    msg.channel.send('lol');
+    msg.channel.send('loll');
   }
 })
 
 client.on('message', msg => {
   if (msg.content === 'LOL') {
-    msg.channel.send('LOL');
+    msg.channel.send('LOLL');
   }
 })
 
