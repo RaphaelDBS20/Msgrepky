@@ -1,6 +1,7 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
+client.on
 emitter.setMaxListeners(9999)
 
 client.on('ready', () => {
