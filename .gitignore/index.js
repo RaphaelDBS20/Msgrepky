@@ -1,20 +1,8 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const emitter = new EventEmitter();
-emitter.once('log', () => console.log('log once'));
 
-const listeners = emitter.rawListeners('log');
-const logFnWrapper = listeners[0];
-
-logFnWrapper.listener();
-
-logFnWrapper();
-
-emitter.on('log', () => console.log('log persistently'));
-const newListeners = emitter.rawListeners('log');
-
-newListeners[0]();
-emitter.emit('log');
+const emitter = new EventEmitter()
+emitter.setMaxListeners(100)
 
 client.on('ready', () => {
   client.user.setPresence({ game: { name: '[m!help]', type: 0}})
