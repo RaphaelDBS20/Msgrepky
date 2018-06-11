@@ -39,12 +39,6 @@ client.on('message', msg => {
 });
 
 client.on('message', msg => {
-  if (msg.content === 'm!help') {
-    msg.reply('les mot a tapper : rip,issou,ping');
-  }
-});
-
-client.on('message', msg => {
   if (msg.content === 'NICK TA MERE') {
     msg.reply('ATTENTION LES INSULTES SONT INTERDITES SUR LE SERVER !');
   }
@@ -107,12 +101,6 @@ client.on('message', msg => {
 client.on('message', msg => {
   if (msg.content === 'caca') {
     msg.reply('Faut que tu murisse dans ta tete');
-  }
-});
-
-client.on('message', msg => {
-  if (msg.content === 'CACA') {
-    msg.reply('Faut que tu murise dans ta tete');
   }
 });
 
