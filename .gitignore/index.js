@@ -26,7 +26,7 @@ client.on('message', msg => {
 
 client.on('message', msg => {
   if (msg.content === 'r.i.p') {
-    msg.reply('nous sommes tous triste de se déced...');
+    msg.channel.send('nous sommes tous triste de se déced...');
   }
 });
 
