@@ -4,7 +4,7 @@ const client = new Discord.Client();
 client.setMaxListeners(0);
 
 client.on('ready', () => {
-  client.user.setPresence({ game: { name: 'Ecrire', type: 0}})
+  client.user.setPresence({ game: { name: 'BRAA', type: 1}})
   console.log(`Connecter en tant que : ${client.user.tag}!`);
 });
 
@@ -16,7 +16,7 @@ client.on('message', msg => {
 
 client.on('message', msg => {
   if (msg.content === 'issou') {
-    msg.reply('Grace a toit la fete et presente chez risitas');
+    msg.reply('Grace a toit la fete et presente chez risitas !');
   }
 });
 
