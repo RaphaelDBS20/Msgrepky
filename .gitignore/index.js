@@ -4,7 +4,7 @@ const client = new Discord.Client();
 client.setMaxListeners(0);
 
 client.on('ready', () => {
-  client.user.setPresence({ game: { name: 'https://www.discord.me/aiomass', type: 0}})
+  client.user.setPresence({ game: { name: 'alo', type: 0}})
   console.log(`Connecter en tant que : ${client.user.tag}!`);
 });
 
