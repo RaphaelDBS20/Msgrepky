@@ -15,7 +15,7 @@ client.on('message', msg => {
 });
 
 client.on('message', msg => {
-  if (msg.content === 'issou') {
+  if (msg.content === ':issou:') {
     msg.reply('Grace a toit la fete et presente chez risitas !');
   }
 });
