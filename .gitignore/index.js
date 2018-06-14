@@ -4,13 +4,13 @@ const client = new Discord.Client();
 client.setMaxListeners(0);
 
 client.on('ready', () => {
-  client.user.setPresence({ game: { name: 'alo', type: 0}})
+  client.user.setPresence({ game: { name: 'Ver.0.0.3 beta', type: 0}})
   console.log(`Connecter en tant que : ${client.user.tag}!`);
 });
 
 client.on('message', msg => {
   if (msg.content === 'ping') {
-    msg.channel.send('k!kvt yo');
+    msg.channel.send('Pong!');
   }
 });
 
