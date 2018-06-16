@@ -4,9 +4,20 @@ const client = new Discord.Client();
 client.setMaxListeners(0);
 
 client.on('ready', () => {
-  client.user.setPresence({ game: { name: 'Ver.0.0.3 beta', type: 0}})
+  client.user.setPresence({ game: { name: 'Discord', type: 0}})
   console.log(`Connecter en tant que : ${client.user.tag}!`);
 });
+
+
+client.on("guildMemberAdd", member => {
+    let role = member.guild.roles.find("name", "GENS")
+    member.guild.channels.find("name", "bienvenue").send(`:video_game: Bienvenue a toi ${member.user.username} je te consseil de lire les régles avant de continuer`)
+    member.addRole(role)
+})
+
+client.on("guildMemberRemove", member => {
+    member.guild.channels.find("name", "bienvenue").send(`:space_invader: ${member.user.username} a quitté le server au revoir...`)
+})
 
 client.on('message', msg => {
   if (msg.content === 'ping') {
