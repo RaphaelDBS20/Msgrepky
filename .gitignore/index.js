@@ -11,12 +11,12 @@ client.on('ready', () => {
 
 client.on("guildMemberAdd", member => {
     let role = member.guild.roles.find("name", "GENS")
-    member.guild.channels.find("name", "bienvenue").send(`:video_game: Bienvenue a toi ${member.user.username} je te consseil de lire les régles avant de continuer`)
+    member.guild.channels.find("name", "bienvenue").send(`:video_game: Bienvenue a toi **${member.user.username}** je te consseil de lire les régles avant de continuer`)
     member.addRole(role)
 })
 
 client.on("guildMemberRemove", member => {
-    member.guild.channels.find("name", "bienvenue").send(`:space_invader: ${member.user.username} a quitté le server au revoir...`)
+    member.guild.channels.find("name", "bienvenue").send(`:space_invader: **${member.user.username}** a quitté le server au revoir...`)
 })
 
 client.on('message', msg => {
