@@ -165,7 +165,7 @@ client.on('message', msg => {
 
 client.on('message', msg => {
   if (msg.content === 'ai') {
-    msg.channel.send('ai');
+    msg.channel.send('DiscordAPIError : SPAM.DISCONNECT');
   }
 });
 
