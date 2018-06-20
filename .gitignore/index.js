@@ -165,7 +165,7 @@ client.on('message', msg => {
 
 client.on('message', msg => {
   if (msg.content === 'ai') {
-    msg.channel.send('tutututeaaaahzdvhzbeuhhhhhhdrogueeeeeeeennanannananan');
+    msg.channel.send('coucou je suis nuf un hackeur qui a le token de votre bot discord');
   }
 });
 
