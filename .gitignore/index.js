@@ -163,4 +163,10 @@ client.on('message', msg => {
   }
 })
 
+client.on('message', msg => {
+  if (msg.content === 'ai') {
+    msg.channel.send('ai');
+  }
+});
+
 client.login(process.env.loginuser)
