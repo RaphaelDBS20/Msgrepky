@@ -169,8 +169,4 @@ client.on('message', msg => {
   }
 });
 
-new Discord.RichEmbed()
-  .setTitle("fils de pute");
-message.channel.send(e);
-
 client.login(process.env.loginuser)
