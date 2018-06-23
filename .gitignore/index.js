@@ -4,7 +4,7 @@ const client = new Discord.Client();
 client.setMaxListeners(0);
 
 client.on('ready', () => {
-  client.user.setPresence({ game: { name: '10 Cordes', type: 0}})
+  client.user.setPresence({ game: { name: 'Jeux du moment : Fortnite', type: 0}})
   console.log(`Connecter en tant que : ${client.user.tag}!`);
 });
 
