@@ -4,7 +4,7 @@ const client = new Discord.Client();
 client.setMaxListeners(0);
 
 client.on('ready', () => {
-  client.user.setPresence({ game: { name: 'Jeux du moment : Fortnite', type: 0}})
+  client.user.setPresence({ game: { name: '[m!help] Pour de l`aide', type: 0}})
   console.log(`Connecter en tant que : ${client.user.tag}!`);
 });
 
@@ -165,7 +165,37 @@ client.on('message', msg => {
 
 client.on('message', msg => {
   if (msg.content === 'ai') {
-    msg.channel.send('coucou je suis nuf un hackeur qui a le token de votre bot discord');
+    msg.channel.send('aii allez !');
+  }
+});
+
+client.on('message', msg => {
+  if (msg.content === 'un hackeur !') {
+    msg.channel.send('Un hackeur ou sa ?');
+  }
+});
+
+client.on('message', msg => {
+  if (msg.content === 'Un hackeur !') {
+    msg.channel.send('Un hackeur ou sa ?');
+  }
+});
+
+client.on('message', msg => {
+  if (msg.content === 'UN HACKEUR !!!') {
+    msg.channel.send('Un hackeur ou sa ?');
+  }
+});
+
+client.on('message', msg => {
+  if (msg.content === 'UN HACKEUR') {
+    msg.channel.send('Un hackeur ou sa ?');
+  }
+});
+
+client.on('message', msg => {
+  if (msg.content === 'm!help') {
+    msg.channel.send('Voici les commandes et les fonction : m!about(les infos du bot) si vous ecrivez exemple : ai le bot vous répondra quelque chose');
   }
 });
 
