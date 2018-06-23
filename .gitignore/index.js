@@ -199,4 +199,10 @@ client.on('message', msg => {
   }
 });
 
+client.on('message', msg => {
+  if (msg.content === 'm!about') {
+    msg.channel.send('Bot héberger sur github et émuler par heroku bot coder en : javascript (node.js) la version du bot : b00008');
+  }
+});
+
 client.login(process.env.loginuser)
