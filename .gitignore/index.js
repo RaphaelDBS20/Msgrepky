@@ -205,9 +205,4 @@ client.on('message', msg => {
   }
 });
 
-client.on('message', message => {
-  // Voice only works in guilds, if the message does not come from a guild,
-  // we ignore it
-  if (!message.guild) return;
-
 client.login(process.env.loginuser)
