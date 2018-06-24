@@ -205,4 +205,17 @@ client.on('message', msg => {
   }
 });
 
+client.on('message', msg => {
+  if (msg.content === 'bonjour') {
+    msg.reply('aurevoir.');
+  }
+});
+
+client.on('message', msg => {
+  if (msg.content === 'Bonjour') {
+    msg.reply('aurevoir.');
+  }
+});
+
+
 client.login(process.env.loginuser)
