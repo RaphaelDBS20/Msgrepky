@@ -26,7 +26,7 @@ client.on('message', msg => {
 });
 
 client.on('message', msg => {
-  if (msg.content === ':issou:') {
+  if (msg.content === 'issou') {
     msg.reply('Grace a toit la fete et presente chez risitas !');
   }
 });
@@ -141,7 +141,7 @@ client.on('message', msg => {
 
 client.on('message', msg => {
   if (msg.content === 'mdr') {
-    msg.channel.send('mdrr');
+    msg.channel.send('@Creepy640#8312, jai dut suprimmer ta pub car elle navez aucun description');
   }
 })
 
