@@ -195,7 +195,7 @@ client.on('message', msg => {
 
 client.on('message', msg => {
   if (msg.content === 'm!help') {
-    msg.channel.send('Voici les commandes et les fonction : m!about(les infos du bot) si vous ecrivez exemple : ai le bot vous répondra quelque chose');
+    msg.reply('Voici les commandes et les fonction : m!about(les infos du bot) si vous ecrivez exemple : ai le bot vous répondra quelque chose');
   }
 });
 
