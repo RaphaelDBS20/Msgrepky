@@ -153,7 +153,7 @@ client.on('message', msg => {
 
 client.on('message', msg => {
   if (msg.content === 'lol') {
-    msg.channel.send('@Creepy640#8312 jai dut suprimmer ta pub car elle navez aucun description');
+    msg.channel.send('loll');
   }
 })
 
