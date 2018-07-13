@@ -223,8 +223,8 @@ client.on('message', message => {
        .setTimestamp()
       message.guild.channels.find("name", "sondages").sendEmbed(embed)
       .then(function (message) {
-          message.react("V")
-          message.react("X")
+          message.react(":white_check_mark:")
+          message.react(":X:")
     }).catch(function() {
     });
     }else{
