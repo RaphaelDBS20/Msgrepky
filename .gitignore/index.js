@@ -225,9 +225,7 @@ client.on('message', message => {
          message.react("✅")
          message.react("❌")
    }).catch(function() {
-   });
-   }else{
-     return message.reply("Tu na pas la permition !")
+
 }})
 
 client.login(process.env.loginuser)
