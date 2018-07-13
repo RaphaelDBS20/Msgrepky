@@ -225,7 +225,7 @@ client.on('message', message => {
       .then(function (message) {
           message.react("V")
           message.react("X")
-    }).catch(fonction() {
+    }).catch(function() {
     });
     }else{
       return.message.reply("Tu na pas la permition !")
