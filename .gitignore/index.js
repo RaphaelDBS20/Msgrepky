@@ -228,6 +228,6 @@ client.on('message', message => {
    });
    }else{
      return message.reply("Tu na pas la permition !")
-}}})
+}})
 
 client.login(process.env.loginuser)
