@@ -222,7 +222,7 @@ client.on('message', message => {
        .setColor("0x840404")
        .setTimestamp()
       message.guild.channels.find("name", "sondages").sendEmbed(embed)
-      .then(fonction (message {
+      .then(function (message) {
           message.react("V")
           message.react("X")
     }).catch(fonction() {
