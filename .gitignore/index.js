@@ -213,7 +213,7 @@ client.on('message', msg => {
 
 client.on('message', message => {
   if (message.content.startsWith("m!sondage")) {
-    if(message.author.id ==  "330594064414146560"){
+    if(message.author.id ==  ""){
       let args = message.content.split(" ").slice(1);
       let thingToEcho = args.join(" ")
       var embed = new Discord.RichEmbed()
