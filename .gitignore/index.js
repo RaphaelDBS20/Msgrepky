@@ -217,9 +217,10 @@ client.on('message', message => {
       let args = message.content.split(" ").slice(1);
       let thingToEcho = args.join(" ")
       var = embed = new Discord.RichEmbed()
-      .setDescription("Sondage")
-      .addField(thingToEcho, "Répondre avec :white_check_mark: ou :x:")
-      .setColor("0x840404")
+       .setDescription("Sondage")
+       .addField(thingToEcho, "Répondre avec :white_check_mark: ou :x:")
+       .setColor("0x840404")
+       .setTimestamp()
       message.channel.sendEmbed(embed)
     .then(fonction (message) {
           message.react("V")
