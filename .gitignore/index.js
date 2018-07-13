@@ -221,8 +221,8 @@ client.on('message', message => {
        .addField(thingToEcho, "Répondre avec :white_check_mark: ou :x:")
        .setColor("0x840404")
        .setTimestamp()
-      message.channel.sendEmbed(embed)
-    .then(fonction (message) {
+      message.guild.channels.find("name", "sondages").sendEmbed(embed)
+      .then(fonction (message) {
           message.react("V")
           message.react("X")
     }).catch(fonction() {
