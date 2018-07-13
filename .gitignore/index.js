@@ -225,7 +225,6 @@ client.on('message', message => {
          message.react("✅")
          message.react("❌")
    }).catch(function() {
-
-}})
+})
 
 client.login(process.env.loginuser)
