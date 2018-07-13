@@ -228,7 +228,7 @@ client.on('message', message => {
     }).catch(function() {
     });
     }else{
-      return.message.reply("Tu na pas la permition !")
+      return message.reply("Tu na pas la permition !")
     }}})
 
 client.login(process.env.loginuser)
