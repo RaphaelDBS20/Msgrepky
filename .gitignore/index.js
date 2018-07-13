@@ -230,7 +230,7 @@ client.on('message', message => {
 }})
 
 client.on('message', message => {
-  if (message.content.startsWith("m!sondagenow")) {
+  if (message.content.startsWith("m!sondanow")) {
      let args = message.content.split(" ").slice(1);
      let thingToEcho = args.join(" ")
      var embed = new Discord.RichEmbed()
