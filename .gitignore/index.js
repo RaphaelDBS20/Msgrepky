@@ -228,6 +228,6 @@ client.on('message', message => {
    });
    }else{
      return aaa
-}}})
+}})
 
 client.login(process.env.loginuser)
