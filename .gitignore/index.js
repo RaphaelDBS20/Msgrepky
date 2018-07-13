@@ -211,5 +211,23 @@ client.on('message', msg => {
   }
 });
 
+client.on('message', message => {
+  if (message.content.startWith("m!sondage")) {
+    if(message.author.id ==  "330594064414146560"){
+      let args = message.content.split(" ").slice(1);
+      let thingToEcho = args.join(" ")
+      var = embed = new Discord.RichEmbed()
+      .setDescription("Sondage")
+      .addField(thingToEcho, "Répondre avec :white_check_mark: ou :x:")
+      .setColor("0x840404")
+      message.channel.sendEmbed(embed)
+    .then(fonction (message) {
+          message.react("V")
+          message.react("X")
+    }).catch(fonction() {
+    });
+    }else{
+      return.message.reply("Tu na pas la permition !")
+    }}})
 
 client.login(process.env.loginuser)
