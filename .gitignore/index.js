@@ -217,5 +217,7 @@ client.on('message', msg => {
   }
 });
 
+case "ping":
+message.channel.sendMessage('Le ping du bot avec le server:`' + `  $(message.createdTimestamp - Date.now()}` + ' ms `'
 
 client.login(process.env.loginuser)
