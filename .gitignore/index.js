@@ -213,7 +213,7 @@ client.on('message', msg => {
 
 client.on('message', msg => {
   if (msg.content === 'm!ping') {
-    msg.channel.send(`Le ping du bot avec le server: $(message.createdTimestamp`)
+    msg.channel.send(`Le ping du bot avec le server: $(message.createdTimestamp)`)
   }
 });
 
