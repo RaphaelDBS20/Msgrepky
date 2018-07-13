@@ -212,13 +212,9 @@ client.on('message', msg => {
 });
 
 client.on('message', msg => {
-  if (msg.content === 'Bonjour') {
-    msg.reply('aurevoir.');
+  if (msg.content === 'm!ping') {
+    msg.channel.send('Le ping du bot avec le server:`' + `  $(message.createdTimestamp - Date.now()}` + ' ms `');
   }
 });
-
-case "ping";
-message.channel.sendMessage('Le ping du bot avec le server:`' + `  $(message.createdTimestamp - Date.now()}` + ' ms `');
-break;
 
 client.login(process.env.loginuser)
