@@ -227,7 +227,6 @@ client.on('message', message => {
    }).catch(function() {
    });
    }else{
-     return aaa
 }})
 
 client.login(process.env.loginuser)
