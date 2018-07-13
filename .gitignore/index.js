@@ -213,17 +213,21 @@ client.on('message', msg => {
 
 client.on('message', message => {
   if (message.content.startsWith("m!sondage")) {
-    if(message.author.is ==  "all"){
-      let args = message.content.split(" ").slice(1);
-      let thingToEcho = args.join(" ")
-      var embed = new Discord.RichEmbed()
-       .setDescription("Sondage")
-       .addField(thingToEcho, "Répondre avec :white_check_mark: ou :x:")
-       .setColor("0x840404")
-       .setTimestamp()
-      message.guild.channels.find("name", "sondages").sendEmbed(embed)
-      .then(function (message) {
-          message.react("✅")
-          message.react("❌")
+     let args = message.content.split(" ").slice(1);
+     let thingToEcho = args.join(" ")
+     var embed = new Discord.RichEmbed()
+      .setDescription("Sondage")
+      .addField(thingToEcho, "Répondre avec :white_check_mark: ou :x:")
+      .setColor("0x840404")
+      .setTimestamp()
+     message.guild.channels.find("name", "sondages").sendEmbed(embed)
+     .then(function (message) {
+         message.react("✅")
+         message.react("❌")
+   }).catch(function() {
+   });
+   }else{
+     return message.reply("Tu na pas la permition !")
+}}})
 
 client.login(process.env.loginuser)
