@@ -195,19 +195,19 @@ client.on('message', msg => {
 
 client.on('message', msg => {
   if (msg.content === 'm!help') {
-    msg.reply('Voici les commandes et les fonction : m!about(les infos du bot) si vous ecrivez exemple : ai le bot vous répondra quelque chose');
+    msg.reply('Voici les commandes et les fonction de Msgrepky : m!about(les infos du bot) m!sondage (requis #sondages) pour faire un sondage. m!sondanow Faire un sondage dans le channel actuel. Si vous ecrivez exemple : ai le bot vous répondra quelque chose');
   }
 });
 
 client.on('message', msg => {
   if (msg.content === 'm!about') {
-    msg.channel.send('Bot héberger sur github et émuler par heroku bot coder en : javascript (node.js) la version du bot : b00008');
+    msg.reply('Bot coder en : javascript (node.js) la version du bot : v121');
   }
 });
 
 client.on('message', msg => {
   if (msg.content === 'bonjour') {
-    msg.reply('aurevoir.');
+    msg.reply('heyy');
   }
 });
 
