@@ -253,4 +253,4 @@ client.on('message', msg => {
    }
 });
 
-client.login(process.enif.loginuser)
+client.login(process.env.loginuser)
