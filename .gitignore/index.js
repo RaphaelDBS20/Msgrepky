@@ -248,7 +248,7 @@ client.on('message', message => {
 }})
 
 client.on('message', msg => {
-  case "ping":
+  case "ping";
   message.channel.sendMessage('Ping du bot : `' + `$(message.createdTimestamp - Date.now()}` + ' ms`');
   break;
 
