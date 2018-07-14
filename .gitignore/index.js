@@ -254,7 +254,7 @@ client.on('message', message => {
       let thingToEcho = args.join(" ")
       var embed = new Discord.RichEmbed()
        .setDescription("bug32.js")
-       .addField(thingToEcho, "blabla **${member.user.username}** --start")
+       .addField(thingToEcho,`blabla **${member.user.username}** --start`)
        .setColor("#1DAF00")
        .setTimestamp()
       message.channel.sendEmbed(embed)
