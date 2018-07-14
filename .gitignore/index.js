@@ -253,7 +253,7 @@ client.on('message', message => {
      let thingToEcho = args.join(" ")
      var embed = new Discord.RichEmbed()
       .setDescription("Embed chat 1.1")
-      .addField(thingToEcho, `Message de **${member.user.username}**`)
+      .addField(thingToEcho, `Message de ${member.user.username}`)
       .setColor("0x840404")
       .setTimestamp()
      message.channel.sendEmbed(embed)
