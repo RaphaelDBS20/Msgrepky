@@ -249,7 +249,7 @@ client.on('message', message => {
 
 client.on('message', msg => {
   if (msg.content === 'm!ping') {
-   message.channel.send('Ping du bot : `' + `$(message.createdTimestamp - Date.now()}` + ' ms`');
+    message.channel.send('Ping du bot : `' + `$(message.createdTimestamp - Date.now()}` + ' ms`');
    }
 });
 
