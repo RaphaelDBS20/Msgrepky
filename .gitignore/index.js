@@ -201,7 +201,7 @@ client.on('message', msg => {
 
 client.on('message', msg => {
   if (msg.content === 'm!about') {
-    msg.reply('Bot coder en : javascript (node.js) la version du bot : v121');
+    msg.reply('Bot coder en : javascript (node.js) la version du bot : v143');
   }
 });
 
