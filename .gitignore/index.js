@@ -247,24 +247,4 @@ client.on('message', message => {
    }else{
 }})
 
-client.on('message', message => {
-  if (message.content.startsWith("m!stop")) {
-    if(message.author.id == "330594064414146560"){
-      let args = message.content.split(" ").slice(1);
-      let thingToEcho = args.join(" ")
-      var embed = new Discord.RichEmbed()
-       .setDescription("bug32.js")
-       .addField(thingToEcho,`blabla **${member.user.username}** --start`)
-       .setColor("#1DAF00")
-       .setTimestamp()
-      message.channel.sendEmbed(embed)
-      .then(function (message) {
-          message.react("✅")
-          message.react("❌")
-   }).catch(function() {
-   });
-   }else{
-     return message.reply("Tu na pas la permition d'éteindre le bot !")
-}}})
-
 client.login(process.env.loginuser)
