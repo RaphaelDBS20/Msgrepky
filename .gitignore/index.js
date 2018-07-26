@@ -16,7 +16,7 @@ client.on("guildMemberAdd", member => {
 })
 
 client.on("guildMemberRemove", member => {
-    member.guild.channels.find("name", "bienvenue").send(`:space_invader: **${member.user.username}** a quitté le server au revoir...`)
+    member.guild.channels.find("name", "géneral").send(`:space_invader: **${member.user.username}** a quitté le server au revoir...`)
 })
 
 client.on('message', msg => {
